@@ -11,7 +11,6 @@
 <?php
 if($_SERVER["REQUEST_METHOD"] == "POST"){
 
-
     $num1 = $_REQUEST['num1'];
     $num2 = $_REQUEST['num2'];
 
@@ -29,7 +28,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     else if($answer == "mult"){
         print ("El resultado de la multiplicacion es " . ($num1 * $num2));
     }
-
 }
 ?>
 </body>
