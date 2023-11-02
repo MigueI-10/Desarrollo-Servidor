@@ -14,30 +14,30 @@
     <?php
 
 
-        if($_SERVER["REQUEST_METHOD"] == "POST") {
+    if($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
-            $num = $_REQUEST['num'];
+        $num = $_REQUEST['num'];
 
-            print($num);
+        print($num);
 
-            for ($i = 1; $i < 11; $i++) {
-                print("<tr>");
-
-
-                print("<td>" . $num . "</td>");
-                print("<td>*</td>");
-                print("<td>" . $i . "</td>");
-                print("<td>=</td>");
-                print("<td>" . ($num * $i) . "</td>");
+        for ($i = 1; $i < 11; $i++) {
+            print("<tr>");
 
 
-                //print("<td>" . $i . " * " . $num . " = " . ($i * $num) . "</td>");
+            print("<td>" . $num . "</td>");
+            print("<td>*</td>");
+            print("<td>" . $i . "</td>");
+            print("<td>=</td>");
+            print("<td>" . ($num * $i) . "</td>");
 
-                print("</tr>");
-            }
 
+            //print("<td>" . $i . " * " . $num . " = " . ($i * $num) . "</td>");
+
+            print("</tr>");
         }
+
+    }
 
 
     ?>
@@ -46,3 +46,4 @@
 
 </body>
 </html>
+

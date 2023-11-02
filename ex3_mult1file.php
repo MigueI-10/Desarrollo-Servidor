@@ -21,22 +21,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 else{
 
-?>
+    ?>
 
-<form method="POST">
-    <label for="num1">Introduce el primer numero:</label>
-    <input type="text" id="num1" name="num1"><br>
-    <label for="num2">Introduce el segundo numero:</label>
-    <input type="text" id="num2" name="num2">
+    <form method="POST">
+        <label for="num1">Introduce el primer numero:</label>
+        <input type="text" id="num1" name="num1"><br>
+        <label for="num2">Introduce el segundo numero:</label>
+        <input type="text" id="num2" name="num2">
 
-    <br>
-    <br>
+        <br>
+        <br>
 
-    <input TYPE="submit" NAME="multiplica" VALUE="Multiplica dos numeros">
+        <input TYPE="submit" NAME="multiplica" VALUE="Multiplica dos numeros">
 
-</form>
+    </form>
 
-<?php
+    <?php
 
 }
 ?>

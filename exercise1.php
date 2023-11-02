@@ -67,37 +67,37 @@ if (isset($_REQUEST['insertar'])){
 }
 else{
 ?>
-    <h1 style="color: blue">Subida de Ficheros</h1>
-    <h2>Insertar nueva noticia</h2>
-    <br><br>
+<h1 style="color: blue">Subida de Ficheros</h1>
+<h2>Insertar nueva noticia</h2>
+<br><br>
 
-    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" enctype="multipart/form-data">
-        <label for="title">Titulo:* </label>
-        <input type="text" id="title" name="title"><br><br><br>
+<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" enctype="multipart/form-data">
+    <label for="title">Titulo:* </label>
+    <input type="text" id="title" name="title"><br><br><br>
 
-        <label for="texto">Texto: &nbsp &nbsp &nbsp &nbsp</label>
-        <TEXTAREA COLS="20" ROWS="4" NAME="texto"></TEXTAREA>
-        <br>
-        <br>
+    <label for="texto">Texto: &nbsp &nbsp &nbsp &nbsp</label>
+    <TEXTAREA COLS="20" ROWS="4" NAME="texto"></TEXTAREA>
+    <br>
+    <br>
 
-        <label for="categoria">Categoría: </label>
-        <SELECT NAME="categ">
-            <OPTION VALUE="ofertas" SELECTED>ofertas
-            <OPTION VALUE="deportes">deportes
-            <OPTION VALUE="noticias">noticias
-        </SELECT><br><br>
+    <label for="categoria">Categoría: </label>
+    <SELECT NAME="categ">
+        <OPTION VALUE="ofertas" SELECTED>ofertas
+        <OPTION VALUE="deportes">deportes
+        <OPTION VALUE="noticias">noticias
+    </SELECT><br><br>
 
-        <label for="imagen">Imagen: &nbsp &nbsp</label>
-        <INPUT TYPE="HIDDEN" NAME="MAX_FILE_SIZE" VALUE='1048576'>
-        <input type="file" name="fichero"><br><br>
+    <label for="imagen">Imagen: &nbsp &nbsp</label>
+    <INPUT TYPE="HIDDEN" NAME="MAX_FILE_SIZE" VALUE='1048576'>
+    <input type="file" name="fichero"><br><br>
 
 
-        <input TYPE="submit" NAME="insertar" VALUE="Insertar Noticia">
+    <input TYPE="submit" NAME="insertar" VALUE="Insertar Noticia">
 
-        <?php
+    <?php
 
     }
-?>
+    ?>
 
 </form>
 </body>

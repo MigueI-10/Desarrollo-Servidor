@@ -16,41 +16,41 @@ session_start();
 
 <?php
 
-    if (isset($_REQUEST['enviar'])) {
+if (isset($_REQUEST['enviar'])) {
 
 
 
-        $birthday = new DateTime($_REQUEST['birth']);
-        $now = new DateTime();
-        $interval = $now -> diff($birthday);
-        $years = $interval -> y;
+    $birthday = new DateTime($_REQUEST['birth']);
+    $now = new DateTime();
+    $interval = $now -> diff($birthday);
+    $years = $interval -> y;
 
 
-        print ("Hello " . nl2br($_REQUEST['name']) . " How are you?" . "<br>");
+    print ("Hello " . nl2br($_REQUEST['name']) . " How are you?" . "<br>");
 
-        if($_REQUEST['sexo'] == 'Man'){
-            print ("You are a Man" . "<br>" . "<br>");
-        }else{
-            print ("You are a Woman" . "<br>" . "<br>");
-        }
-
-
-        print ("Your age is " . $years  . "  years." . "<br>". "<br>");
-
-
-        print ("Your favourite operating system is " . ($_REQUEST['osys'])   . "<br>". "<br>");
-
-        if(isset($_REQUEST['football'])){
-            print ("You like football" . "<br>" . "<br>");
-        }else{
-            print ("You dont like football" . "<br>" . "<br>");
-        }
-
-        print ("Your hobbies are:" . "<br>" . "<br>" . nl2br($_REQUEST['hobbies']) . "<br>". "<br>");
-
-        $url = $_SERVER['PHP_SELF'];
-        echo "<a href='$url'> Back to the Form </a>";
+    if($_REQUEST['sexo'] == 'Man'){
+        print ("You are a Man" . "<br>" . "<br>");
+    }else{
+        print ("You are a Woman" . "<br>" . "<br>");
     }
+
+
+    print ("Your age is " . $years  . "  years." . "<br>". "<br>");
+
+
+    print ("Your favourite operating system is " . ($_REQUEST['osys'])   . "<br>". "<br>");
+
+    if(isset($_REQUEST['football'])){
+        print ("You like football" . "<br>" . "<br>");
+    }else{
+        print ("You dont like football" . "<br>" . "<br>");
+    }
+
+    print ("Your hobbies are:" . "<br>" . "<br>" . nl2br($_REQUEST['hobbies']) . "<br>". "<br>");
+
+    $url = $_SERVER['PHP_SELF'];
+    echo "<a href='$url'> Back to the Form </a>";
+}
 
 else{
     ?>
@@ -90,6 +90,8 @@ else{
 
         <input TYPE="submit" NAME="enviar" VALUE="Submit">
         <input TYPE="reset" NAME="borrar" VALUE="Reset">
+        <br>
+        <a href="aficionesSession.php">Volver al login</a>
 
     </form>
 
@@ -97,11 +99,6 @@ else{
     <?php
 }
 ?>
-
-
-
-
-
 
 </body>
 </html>

@@ -34,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if ($numero * $i != $array[$i-1]) {
 
             print("El resultado de multiplicar " . $numero . " por " . ($i) . " es " .
-                    ($numero * $i) . " y no " .  $array[$i-1] . "<br>");
+                ($numero * $i) . " y no " .  $array[$i-1] . "<br>");
             $contFallos++;
         }
     }

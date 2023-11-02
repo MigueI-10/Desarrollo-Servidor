@@ -29,20 +29,20 @@ if (isset($_REQUEST['send'])) {
 
 }else{
 
-?>
+    ?>
 
 
-<form method="POST">
-    <label for="link">URL:</label>
-    <input type="text" id="link" name="link" size='18'><br>
+    <form method="POST">
+        <label for="link">URL:</label>
+        <input type="text" id="link" name="link" size='18'><br>
 
 
-    <br>
-    <br>
+        <br>
+        <br>
 
-    <input TYPE="submit" NAME="send" VALUE="Send">
-</form>
-<?php
+        <input TYPE="submit" NAME="send" VALUE="Send">
+    </form>
+    <?php
 }
 ?>
 

@@ -72,22 +72,22 @@ if (isset($_REQUEST['adivina'])){
 }
 else{
 ?>
-    <h1>Adivina el número del 1 al 100</h1>
-    <form action="<?php echo $_SERVER['PHP_SELF']; ?>">
-        <label for="num">Introduce el número:</label>
-        <input type="text" id="num" name="num"><br>
+<h1>Adivina el número del 1 al 100</h1>
+<form action="<?php echo $_SERVER['PHP_SELF']; ?>">
+    <label for="num">Introduce el número:</label>
+    <input type="text" id="num" name="num"><br>
 
-        <br>
-        <br>
-        <input TYPE="submit" id='adivina' NAME="adivina" VALUE="Enviar">
+    <br>
+    <br>
+    <input TYPE="submit" id='adivina' NAME="adivina" VALUE="Enviar">
 
     <?php
 
-}
+    }
 
     $generado = rand(1, 100);
     echo "<input type='hidden' id='generado' name='generado' value='$generado'></form>";
-?>
+    ?>
 
 
 
